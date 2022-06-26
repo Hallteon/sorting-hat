@@ -1,6 +1,15 @@
 from utils.db_stuff.connect_db import cursor, connect
 
 
+async def create_table():
+    cursor.execute("""CREATE TABLE IF NOT EXISTS users (
+                    name VARCHAR(255),
+                    id BIGSERIAL NOT NULL PRIMARY KEY,
+                    xp INT,
+                    spam_warns INT);""")
+    connect.commit()
+
+
 async def select_xp(id):
     cursor.execute(f"""SELECT xp FROM users WHERE id = {id}""")
 
