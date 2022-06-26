@@ -1,0 +1,6 @@
+asyncio==3.4.3
+discord-components==2.1.2
+discord.py==1.7.3
+psycopg2==2.9.2
+fuzzywuzzy==0.18.0
+environs==9.5.0
