@@ -1,7 +1,7 @@
 from data.config import BOT_TOKEN
 from loader import bot
-from utils.on_ready_event import on_ready
 from utils.db_stuff.connect_db import connect
+from utils.on_ready_event import on_ready
 
 
 def on_startup():
